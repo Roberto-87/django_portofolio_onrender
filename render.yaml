@@ -1,6 +1,6 @@
 databases:
   - name: portfolio
-    databaseName: portfolioDb
+    databaseName: djangoportfoliodb
     user: Roberto_Ochoa
 
 services:
