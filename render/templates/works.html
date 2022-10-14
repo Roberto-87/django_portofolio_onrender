@@ -1,0 +1,29 @@
+{%block content%}
+
+{%load static %}
+{{works}}
+<h2 id="works" class='title_works'>Works</h2>
+</div>
+<main class="container row d-flex justify-content-around  section__works ">
+{% for project in projects %}
+<div class="card mb-5 col-sm-12 col-md-6 col-lg-4 tienda-card card_container p-0 " data-aos="flip-right" data-aos-duration="2000" style="width: 18rem;" id="first">
+  <a href="{{project.url}}" target="__blank" rel="noreferrer"> 
+   
+<div class="container-imgs" >
+    <img src="{{project.image.url}}" class="card-img-top img_work_visible" alt="{{ project.title }}"> 
+      <div class="container_imghover ">
+        <img src="{{project.image_onmouseover.url}}" class="card-img-top img_work_hover" alt="{{ project.title }}"> 
+      </div>  
+  </div>
+<div class="card-body ">
+  <h5 class="card-title">{{ project.title }}</h5>
+  <p class="card-text">{{ project.description }}</p>
+</div>
+  <a href="#" class="btn btn-comprar"></a>
+</div>
+</div>
+</a> 
+{% endfor %}    
+</main>
+
+{%endblock%}
