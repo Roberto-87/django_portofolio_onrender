@@ -1,7 +1,7 @@
 databases:
   - name: portfolio
     databaseName: djangoportfoliodb
-    user: Roberto_Ochoa
+    user: djangoportfoliodb_user
 
 services:
   - type: web
